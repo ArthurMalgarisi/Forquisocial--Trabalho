@@ -1,0 +1,43 @@
+/* UserProfile.css */
+
+/* Container do UserProfile */
+.user-profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 10rem; /* Adicionando margem inferior */
+}
+
+/* Estilo para os itens do perfil */
+.user-profile-item {
+    text-align: left;
+    padding: 15px;
+    margin-top: 5px;
+    height: auto;
+    flex-basis: 100%;
+    max-width: 800px;
+}
+
+/* Ícone de edição */
+.edit-icon {
+    margin-top: 6%;
+    background-color: white;
+    border-radius: 50%;
+    padding: 4px;
+    cursor: pointer;
+}
+
+/* Adaptação para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    .user-profile-container {
+        margin-bottom: 5rem; /* Reduzindo a margem inferior */
+    }
+    .user-profile-item {
+        max-width: 90%; /* Usando a largura máxima disponível */
+    }
+}

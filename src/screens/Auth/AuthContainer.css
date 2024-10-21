@@ -1,0 +1,80 @@
+/* Estilos gerais */
+.auth-container {
+  background-color: #3f51b5; /* Cor de fundo do container */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px; /* Adicionado padding para garantir espaçamento em telas menores */
+}
+
+.auth-inner-container {
+  background-color: #ffffff; /* Cor de fundo do conteúdo interno */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 60%; /* Largura máxima */
+  text-align: center;
+}
+
+.auth-title {
+  margin-bottom: 20px;
+  color: #3f51b5; /* Cor do título */
+}
+
+.auth-toggle-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Botão de alternância de autenticação */
+.auth-toggle-buttons button {
+  background-color: transparent; /* Cor de fundo transparente */
+  color: #3f51b5; /* Cor do texto */
+  margin: 0 5px;
+  padding: 10px 20px;
+  border: 2px solid #3f51b5; /* Bordas */
+  border-radius: 20px; /* Bordas arredondadas */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transições suaves */
+}
+
+.auth-toggle-buttons button:hover {
+  background-color: #3f51b5; /* Cor de fundo no hover */
+  color: #ffffff; /* Cor do texto no hover */
+}
+
+/* Estilos para os botões de login e cadastro */
+.loginButton, .signupButton {
+  width: 150px;
+  border-radius: 20px;
+}
+
+.loginButton.active, .signupButton.active {
+  background-color: #3f51b5; /* Cor de fundo ativa */
+  color: #ffffff; /* Cor do texto ativa */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 600px) {
+  .auth-inner-container {
+    padding: 20px;
+    max-width: 90%; /* Largura máxima ajustada para telas menores */
+  }
+
+  .auth-toggle-buttons {
+    flex-direction: column; /* Mudar direção para coluna em telas menores */
+  }
+
+  .auth-toggle-buttons button {
+    margin: 5px 0; /* Ajustar margens para espaçamento vertical */
+  }
+
+  .loginButton, .signupButton {
+    width: 100%; /* Largura total em telas menores */
+    padding: 10px 0; /* Ajustar padding para ficar mais proporcional */
+  }
+}

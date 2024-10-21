@@ -1,0 +1,9 @@
+/* Estilo para botões ativos */
+.servicoButton.active,
+.homeButton.active,
+.userButton.active,
+.galeriaButton.active,
+.avisosButton.active {
+  color: red; /* Cor do texto quando ativo */
+  border: 2px solid red; /* Adiciona uma borda vermelha quando ativo */
+}

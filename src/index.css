@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Estilos para WebKit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 6px; /* largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* cor de fundo da trilha da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* cor do indicador de rolagem */
+  border-radius: 2px; /* borda arredondada */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* cor do indicador de rolagem quando o mouse está sobre ele */
+}
